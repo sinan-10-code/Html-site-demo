@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to html</title> 
+<style>
+        body {
+            background-color: #f0f8f6;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1.title {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: gray;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .box {
+            background-color: white;
+            width: 50%;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 35px;
+            box-shadow: 0 2px 8px #dddddd;
+            box-sizing: border-box;
+        }
+        
+.special {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.entity-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 0;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.code-box {
+    flex: 1;
+    width: 0;
+}
+
+.code {
+    background: #1e2432;
+    color: #d7e2a3;
+    padding: 20px;
+    border-radius: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-family: monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.maintiger{
+    width: 100%;
+}
+#tiger{background-color: white;
+            width: 450px;
+            height: 400px;
+          
+            border-radius: 2px;
+            margin-top: 35px;
+            margin-left: 20px;
+            box-shadow: 0 2px 8px #dddddd;
+            box-sizing: border-box;
+            float: left;
+            margin-bottom: 90px;
+
+}
+.mainlion{
+    width: 100%;
+}
+#lion{
+            box-sizing: border-box;
+            float: left;
+            margin-bottom: 90px;
+        
+}
+    </style>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 class="title">🟦 Introduction to HTML</h1>
+    <p>Explore every heading level and text formatting tag available in HTML.</p>
+
+    <div class="box">
+
+        <h1>Heading 1 — The Main Title</h1>
+        <h2>Heading 2 — Section Title</h2>
+        <h3>Heading 3 — Subsection</h3>
+        <h4>Heading 4 — Topic</h4>
+        <h5>Heading 5 — Subtopic</h5>
+        <h6>Heading 6 — Detail</h6>
+
+    </div>
+    ..<div class="container">
+
+    <div class="box">
+        <h3>Paragraph Alignments</h3>
+
+        <p class="left">
+            <span>Left</span>
+            This paragraph is aligned to the left, which is the default alignment for most text content on the web.
+        </p>
+
+        <p class="right">
+            <span>Right</span>
+            This paragraph is right-aligned, often used for dates or signatures.
+        </p>
+
+        <p class="center">
+            <span>Center</span>
+            This paragraph is centered, commonly used for headings and titles.
+        </p>
+
+        <p class="justify">
+            <span>Justify</span>
+            This paragraph is justified. The text stretches so that each line has equal width, creating a clean block appearance similar to newspapers and books.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>Line Breaks &amp; Formatting</h3>
+
+        <p>
+            HTML stands for <b>HyperText Markup Language.</b><br>
+            It was created by <i>Tim Berners-Lee</i> in 1991.<br>
+            HTML is the <u>backbone</u> of every website.
+        </p>
+
+        <hr>
+
+        <p><b>Strong emphasis</b> vs <i>emphasis</i></p>
+        <p>Big text <small>vs small text</small></p>
+        <p>H<sub>2</sub>O is water, E = mc<sup>2</sup></p>
+        <p><mark>Highlighted text</mark> and <del>deleted text</del></p>
+    </div>
+
+</div>
+..
+<h1>🔣 Special Characters &amp; Code Display</h1>
+
+<p>HTML entities and preformatted code blocks.</p>
+
+<div class="special">
+
+    <div class="entity-box">
+        <h3>HTML Entities</h3>
+
+        <table>
+            <tr>
+                <th>Entity</th>
+                <th>Symbol</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>&amp;nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Non-breaking space</td>
+            </tr>
+
+            <tr>
+                <td>&amp;lt;</td>
+                <td>&lt;</td>
+                <td>Less than</td>
+            </tr>
+
+            <tr>
+                <td>&amp;gt;</td>
+                <td>&gt;</td>
+                <td>Greater than</td>
+            </tr>
+
+            <tr>
+                <td>&amp;copy;</td>
+                <td>&copy;</td>
+                <td>Copyright</td>
+            </tr>
+
+            <tr>
+                <td>&amp;reg;</td>
+                <td>&reg;</td>
+                <td>Registered</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="code-box">
+        <h3>Code Preview Block</h3>
+
+        <pre class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0" /&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+</div>
+<img src="img 11.png" alt="error">
+<h1>🎞️ Live Updates</h1>
+
+<p>Animated scrolling announcements</p>
+
+<marquee bgcolor="#2da99c" 
+         direction="left" 
+         scrollamount="5"
+         style="padding:15px; color:white; border-radius:12px;">
+    📢 New Course Alert: Advanced React Patterns — Enroll Now!🔥 limited seats available for the summer bootcamp 2026
+</marquee>
+
+<br><br>
+
+<marquee bgcolor="#ff941b" 
+         direction="right" 
+         scrollamount="3"
+         style="padding:15px; color:white; border-radius:12px;">
+    🎓 500+ students graduated this quarter!
+</marquee>
+
+<br><br>
+
+<marquee bgcolor="#2da99c" 
+         direction="left" 
+         scrollamount="5"
+         style="padding: 15px; color:white; border-radius:12px;">
+    🔥 JavaScript Masterclass starts Monday — Don't miss out!
+</marquee>
+
+<br><br>
+
+<marquee bgcolor="#dff3f1" 
+         direction="up" 
+         scrollamount="5"
+         style="padding: 10px; color:#477c72; border-radius:100px;">
+    🚀 Learn JavaScript — Build interactive websites today!
+</marquee>
+
+<div class="mainTiger">
+<h1> available courses</h1>
+<p>demonstarating unordered,ordered,and nested lists with different markers </p>
+
+<div class="box" id="tiger">
+
+<ul type="disc">unordered lists 
+    <li>html fundamentals</li>
+    <li>css basics</li>
+</ul>
+<ul type="circle"><li>JavaScript</li>
+<li>typescript</li>
+</ul>
+<ul type="square"><li>roact</li>
+<li>node.js</li>
+</ul>
+<ul type="none"><li>docker</li>
+<li>aws</li></ul>
+</div>
+
+<div class="box" id="tiger">
+    <ol type="1">ordered lists
+        <li>introduction to web</li>
+        <li>setting up environment</li>
+    </ol>
+<ol type="A"><li>frontend developement</li>
+<li>backend developement</li>
+</ol>
+<ol type="a"><li>database design</li>
+<li>api developement</li>
+</ol>
+<ol type="I" start="3"><li>advaced patterns</li>
+<li>deployment</li></ol>
+
+</div>
+<div class="box" id="tiger">
+<ol>nested structure
+    <li>web developement
+        <ol> 
+            <li>module 1:html 
+               <ul>
+                    <li>tags & elements</li>
+                    <li>attributes</li>
+                    <li>forms</li>
+                </ul>
+            <li>module-2 class
+                <ul>
+                    <li>selectors</li>
+                    <li>flexbox& grid</li>
+                </ul>
+                <li>programming</li>
+                <li> module 1: JavaScript
+                    <ul><li>variables & functions</li>
+                    <li>dom manipulation</li></ul>
+                </li>
+            </li>
+        </ol>
+    </li>
+</ol>
+</div>
+
+</div>
+<h1>technology definitions</h1>
+<p>a definition list of key web technologies</p>
+<table>
+<tr><td>
+    <strong>html</strong>
+    <p>HyperText markup language- the standered language for creating web pages and web application</p>
+</td>
+</tr>
+<tr><td>
+    <strong>JavaScript</strong>
+    <p>a high-level interpreted programming language that enables interactive web pages and dynamic content </p>
+</td></tr>
+
+<tr><td>
+
+    <strong>node.js</strong>
+    <p>a run time environement that executes javascript code outside a web browser,enabling server-side developement.</p>
+
+</td></tr>
+
+
+<tr><td>
+    <strong>css</strong>
+    <p>cascading style sheets- used to describe the presentation and layout of html documents</p>
+</td></tr>
+
+<tr><td>
+    <strong>react</strong>
+    <p>a javascript library for building user interfaces,maintained by meta and a community of developers.</p>
+</td></tr>
+
+</table>
+
+
+
+<h1>quotes & abbreviations</h1>
+<p>using blockquote and abbr elements </p>
+
+
+
+<div class="box">
+    <blockquote>"the web as i envisaged it , we have not seen it <br>the future is still so much bigger than the past ". <br>
+    <strong>_ tim berners-lee,inventor of the .www</strong>
+    </blockquote>
+
+</div>
+
+<div class="box">
+    <blockquote><b>common abbreviations</b><br>
+    
+        <p><b>html</b> is the foundation of all web content.</p>
+    <p><b>css</b> handles visual presentation and layout.</p>
+    <p><b>api</b> enables communication between software systems.</p>
+    <p><b>dom</b>reperesents the page structre as a tree of objects.</p>
+    
+    </blockquote>
+</div>
+
+
+<h1>styling & layout enhancements</h1>
+<p>demonstarating legecy font styling,centering and horizontal rules with various attributtes.</p>
+
+<div>
+    <strong>font variations </strong>
+    <p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="box">
+<strong>horizontal rules (<hr>)</strong>
+<hr width="100%",size="1">
+
+<hr width="60%",size="3",align="center">
+
+<hr width="40%",align="left",color="orenge">
+
+<hr width="80%",size="4",align="right">
+</div>
+
+
+
+
+<h1>website content structre</h1>
+<p>a documentation- style combining heading,lists,and paragraphs.</p>
+
+<div class="box">
+    <b>chapter 1 :introduction</b>
+    <p>this chapters covers the fundemental technologies and hown the internet delivers content to users worldwide</p>
+    1.what is internet?<br>
+    2.how web browser work <br>
+    3.client-server architecture 
+</div>
+<div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
